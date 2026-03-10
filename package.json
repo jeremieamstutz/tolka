@@ -5,10 +5,17 @@
   "author": "Jérémie Amstutz <jeremie.amstutz@gmail.com>",
   "license": "MIT",
   "homepage": "https://tolka.dev",
-  "keywords": ["i18n", "translations", "localization", "locales", "cli", "nextjs"],
+  "keywords": [
+    "i18n",
+    "translations",
+    "localization",
+    "locales",
+    "cli",
+    "nextjs"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jeremieamstutz/tolka"
+    "url": "git+https://github.com/jeremieamstutz/tolka.git"
   },
   "engines": {
     "node": ">=18.0.0"
@@ -20,7 +27,7 @@
     "jsconfig.json"
   ],
   "bin": {
-    "tolka": "./bin/cli.js"
+    "tolka": "bin/cli.js"
   },
   "scripts": {
     "dev": "next dev",
