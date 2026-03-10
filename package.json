@@ -1,5 +1,5 @@
 {
-  "name": "tolka",
+  "name": "tolka-cli",
   "description": "A local UI for your locales.",
   "version": "0.1.0",
   "author": "Jérémie Amstutz <jeremie.amstutz@gmail.com>",

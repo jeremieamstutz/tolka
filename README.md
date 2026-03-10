@@ -15,7 +15,7 @@ No cloud, no account, just your files.
 ## Quick Start
 
 ```bash
-npx tolka [/path/to/your/locales]
+npx tolka-cli [/path/to/your/locales]
 ```
 
 Starts a local server at [http://localhost:3000](http://localhost:3000). Defaults to `./locales` if no path is given.
