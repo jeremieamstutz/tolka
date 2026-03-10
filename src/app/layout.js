@@ -10,8 +10,8 @@ const fontSans = FontSans({
 })
  
 export const metadata = {
-  title: "i18n-studio",
-  description: "Manage your i18n locales with ease",
+  title: "tolka",
+  description: "Manage your translations with ease",
 };
 
 export default function RootLayout({ children }) {

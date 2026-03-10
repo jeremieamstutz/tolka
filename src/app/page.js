@@ -11,7 +11,7 @@ export default async function Home() {
     <main className="flex min-h-screen flex-col items-center p-8 bg-muted/20">
       <div className="z-10 w-full max-w-4xl items-center justify-between text-sm">
         <div className="flex items-center justify-between mb-8">
-            <h1 className="text-2xl font-bold tracking-tight">i18n-studio</h1>
+            <h1 className="text-2xl font-bold tracking-tight">tolka</h1>
         </div>
         <LocalesTable initialData={initialData} />
       </div>

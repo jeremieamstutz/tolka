@@ -1,15 +1,33 @@
 {
-  "name": "i18n-studio",
+  "name": "tolka",
+  "description": "A local UI for your locales.",
   "version": "0.1.0",
-  "private": true,
+  "author": "Jérémie Amstutz <jeremie.amstutz@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://tolka.dev",
+  "keywords": ["i18n", "translations", "localization", "locales", "cli", "nextjs"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeremieamstutz/tolka"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "bin",
+    ".next",
+    "next.config.js",
+    "jsconfig.json"
+  ],
   "bin": {
-    "i18n-studio": "./bin/cli.js"
+    "tolka": "./bin/cli.js"
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepublishOnly": "next build"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.15",
