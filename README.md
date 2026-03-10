@@ -18,7 +18,7 @@ No cloud, no account, just your files.
 npx tolka-cli [/path/to/your/locales]
 ```
 
-Starts a local server at [http://localhost:3000](http://localhost:3000). Defaults to `./locales` if no path is given.
+Starts a local server at [http://localhost:3000](http://localhost:3000). Defaults to `./src/locales` if no path is given.
 
 ## File Format
 
