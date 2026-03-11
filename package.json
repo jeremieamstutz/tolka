@@ -1,7 +1,7 @@
 {
   "name": "tolka-cli",
   "description": "A local UI for your locales.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Jérémie Amstutz <jeremie.amstutz@gmail.com>",
   "license": "MIT",
   "homepage": "https://tolka.dev",
