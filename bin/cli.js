@@ -33,13 +33,27 @@ async function main() {
 
   const http = require('http');
   const handle = app.getRequestHandler();
-  const port = process.env.PORT || 3000;
+  let port = parseInt(process.env.PORT || 9000, 10);
 
-  http.createServer(handle).listen(port, () => {
-    const url = `http://localhost:${port}`;
-    console.log(`> Ready on ${url}`);
-    require('open').default(url);
-  });
+  function tryListen(p) {
+    const server = http.createServer(handle);
+    server.listen(p, () => {
+      const url = `http://localhost:${p}`;
+      console.log(`> Ready on ${url}`);
+      require('open').default(url);
+    });
+    server.once('error', (err) => {
+      if (err.code === 'EADDRINUSE') {
+        server.close();
+        console.log(`Port ${p} in use, trying ${p + 1}...`);
+        tryListen(p + 1);
+      } else {
+        throw err;
+      }
+    });
+  }
+
+  tryListen(port);
 }
 
 main().catch((err) => {
