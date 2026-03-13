@@ -1,5 +1,3 @@
-# tolka ✨
-
 ![Banner](./assets/banner.png)
 
 A local UI for your locales. 
