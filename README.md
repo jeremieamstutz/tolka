@@ -48,7 +48,7 @@ Each locale file is a flat or nested JSON object:
 To use AI-powered translation, set your OpenAI API key:
 
 ```bash
-OPENAI_API_KEY=sk-... npx tolka ./locales
+OPENAI_API_KEY=sk-... npx tolka-cli ./locales
 ```
 
 ## Requirements
