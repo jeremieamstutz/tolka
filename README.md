@@ -1,4 +1,6 @@
-# tolka
+# tolka ✨
+
+![Banner](./assets/banner.png)
 
 A local UI for your locales. 
 No cloud, no account, just your files.
